@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical">
+
+    <include layout="@layout/action_bar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/all_bg"
+        android:orientation="vertical"
+        android:padding="8dp" >
+
+        <include layout="@layout/cardinfo" />
+
+        <TextView
+            android:id="@+id/txt_waring"
+            style="@style/waring_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp" />
+
+        <Button
+            android:id="@+id/button"
+            style="@style/Button"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/button_65px_orange"
+            android:onClick="onClick"
+            android:paddingTop="8dp"
+            android:text="确  定"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

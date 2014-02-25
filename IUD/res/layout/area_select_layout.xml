@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:orientation="vertical"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent">
+
+  <TableRow android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:background="@drawable/list_item_center_bg">
+    <TextView android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:gravity="right"
+              android:text="省:"
+              android:textAppearance="@style/tableTitleText"/>
+    <Spinner
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1.0"
+      android:background="@null"
+      android:id="@+id/province_spinner"
+      android:layout_gravity="center"/>
+  </TableRow>
+
+  <TableRow android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:background="@drawable/list_item_center_bg">
+    <TextView android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:gravity="right"
+              android:text="市:"
+              android:textAppearance="@style/tableTitleText"/>
+    <Spinner
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1.0"
+      android:background="@null"
+      android:id="@+id/city_spinner"/>
+  </TableRow>
+  <TableRow android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:background="@drawable/list_item_center_bg">
+    <TextView android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:gravity="right"
+              android:text="区:"
+              android:textAppearance="@style/tableTitleText"/>
+    <Spinner
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1.0"
+      android:background="@null"
+      android:id="@+id/county_spinner"
+      android:layout_gravity="center"/>
+  </TableRow>
+</TableLayout>

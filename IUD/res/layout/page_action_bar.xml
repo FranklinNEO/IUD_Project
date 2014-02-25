@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_height="wrap_content"
+              android:layout_width="fill_parent"
+              android:orientation="vertical">
+  <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:background="@drawable/list_divider"/>
+  <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:padding="6dp"
+                android:gravity="center_vertical">
+    <ImageButton android:id="@+id/search_button"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:background="@android:color/transparent"
+                 android:src="@drawable/btn_search"
+                 android:paddingRight="8dp"
+                 android:contentDescription="search"/>
+    <RelativeLayout android:layout_height="wrap_content"
+                    android:layout_width="fill_parent">
+      <ImageButton android:id="@+id/pageup_button"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentLeft="true"
+                   android:background="@android:color/transparent"
+                   android:src="@drawable/btn_prev"
+                   android:contentDescription="pageup"/>
+      <TextView android:id="@+id/page_info_text"
+                android:singleLine="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginRight="58dp"
+                android:layout_marginLeft="58dp"
+                android:layout_centerInParent="true"
+                android:text="10/100"/>
+      <ImageButton android:id="@+id/pagedown_button"
+                   android:layout_alignParentRight="true"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="@android:color/transparent"
+                   android:src="@drawable/btn_next"
+                   android:contentDescription="pagedown"/>
+    </RelativeLayout>
+  </LinearLayout>
+</LinearLayout>

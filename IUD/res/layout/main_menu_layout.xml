@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@drawable/all_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/action_bar"/>
+
+    <cn.redinfo.chenzhi.Fantasy.DashboardLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+        <!-- Places Button -->
+
+        <Button
+                android:id="@+id/dsh_btn_events"
+                style="@style/DashboardButton"
+                android:layout_width="112dp"
+                android:layout_height="90dp"
+                android:drawableTop="@drawable/dsh_btn_events"
+                android:text="放置信息记录"
+                />
+
+        <!-- Events Button -->
+
+        <Button
+                android:id="@+id/dsh_btn_friends"
+                style="@style/DashboardButton"
+                android:drawableTop="@drawable/dsh_btn_friends"
+                android:text="@string/id_dsh_btn_friend"/>
+
+        <!-- News Feed Button -->
+
+        <Button
+                android:id="@+id/dsh_btn_messages"
+                style="@style/DashboardButton"
+                android:drawableTop="@drawable/dsh_btn_messages"
+                android:text="@string/id_dsh_btn_message"/>
+
+        <!-- Friends Button -->
+
+        <Button
+                android:id="@+id/dsh_btn_news_feed"
+                style="@style/DashboardButton"
+                android:drawableTop="@drawable/dsh_btn_news_feed"
+                android:text="设备信息"
+                />
+
+        <!-- Messages Button -->
+
+        <Button
+                android:id="@+id/dsh_btn_photos"
+                style="@style/DashboardButton"
+                android:drawableTop="@drawable/dsh_btn_photos"
+                android:text="Messages"
+                android:visibility="invisible"
+                />
+
+        <!-- Photos Button -->
+
+        <Button
+                android:id="@+id/dsh_btn_places"
+                style="@style/DashboardButton"
+                android:drawableTop="@drawable/dsh_btn_places"
+                android:text="Photos"
+                android:visibility="invisible"
+              />
+    </cn.redinfo.chenzhi.Fantasy.DashboardLayout>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:text="@string/copyright"
+                android:textAppearance="@android:style/TextAppearance.Small.Inverse"/>
+
+        <TextView
+                android:id="@+id/infoTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="8dp"
+                android:textAppearance="@android:style/TextAppearance.Small.Inverse"/>
+    </LinearLayout>
+
+</LinearLayout>

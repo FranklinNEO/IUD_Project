@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:background="@drawable/list_item_bkg_single"
+              android:paddingRight="18dp"
+              android:paddingLeft="18dp">
+
+  <TextView android:id="@id/txt_prodName"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:textAppearance="@style/tableContentText"
+            android:text="药品名称"/>
+
+  <LinearLayout android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp">
+
+    <TextView android:id="@id/txt_operationDate"
+              android:layout_height="wrap_content"
+              android:layout_width="0dp"
+              android:layout_weight="1.0"
+              android:textAppearance="@style/tableContentText"
+              android:text="安装时间"/>
+
+    <TextView android:id="@+id/txt_operator"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:textAppearance="@style/tableContentText"
+              android:text="手术人"/>
+
+  </LinearLayout>
+
+</LinearLayout>

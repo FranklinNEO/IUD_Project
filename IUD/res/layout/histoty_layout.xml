@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@drawable/all_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/action_bar"/>
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#f3f3f3"
+            android:orientation="vertical">
+        <ListView
+                android:id="@id/android:list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/mm_listitem_normal"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@drawable/reader_item_divider"
+                android:fadingEdge="none"
+                android:fastScrollEnabled="true"
+                android:listSelector="@drawable/mm_listitem_normal"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:scrollbarStyle="insideOverlay"
+                android:scrollbars="none"/>
+
+        <LinearLayout
+                android:id="@id/android:empty"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:gravity="center_horizontal"
+                >
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:textColor="#ff29549f"
+                      android:layout_marginTop="180dip"
+                      android:textSize="26dip"
+                      android:text="无放置信息记录"
+                      android:typeface="serif"/>
+            />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

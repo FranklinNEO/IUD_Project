@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/menu_bar"/>
+
+    <ScrollView
+            android:background="@drawable/all_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none">
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/all_bg"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:id="@+id/ll_idcard"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+                              android:orientation="horizontal">
+                    <Button android:layout_width="wrap_content" android:layout_height="38dip"
+                            android:textColor="@color/mm_hyper_text"
+                            android:id="@+id/autoBtn"
+                            android:background="@drawable/abc_cab_background_top_holo_light"
+                            android:layout_weight="1" android:text="扫描输入"/>
+                    <Button android:layout_width="wrap_content" android:layout_height="38dip"
+                            android:textColor="@color/black_40_transparent"
+                            android:id="@+id/typeBtn"
+                            android:background="@drawable/abc_ab_solid_light_holo"
+                            android:layout_weight="1" android:text="手动输入"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/image_ll"
+                        android:background="@drawable/list_item_bkg_middle">
+
+                    <TableLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0">
+
+                        <TableRow
+                                android:background="@drawable/list_item_bkg_middle"
+                                android:gravity="center_vertical">
+
+                            <TextView
+                                    style="@style/tableTitleText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:gravity="right|center_vertical"
+                                    android:text="@string/id_name"/>
+
+                            <TextView
+                                    android:id="@+id/text_Name"
+                                    style="@style/tableContentText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_span="3"
+                                    android:layout_weight="1.0"
+                                    />
+                        </TableRow>
+
+                        <TableRow
+                                android:background="@drawable/list_item_center_bg"
+                                android:gravity="center_vertical">
+
+                            <TextView
+                                    style="@style/tableTitleText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:gravity="right|center_vertical"
+                                    android:text="@string/id_gender"/>
+
+                            <TextView
+                                    android:id="@+id/text_Gender"
+                                    style="@style/tableContentText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_weight="1.0"
+                                    android:text=""/>
+
+                            <TextView
+                                    style="@style/tableTitleText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:gravity="right|center_vertical"
+                                    android:text="@string/id_nation"/>
+
+                            <TextView
+                                    android:id="@+id/text_Nation"
+                                    style="@style/tableContentText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_weight="1.0"
+                                    android:text=""/>
+                        </TableRow>
+                    </TableLayout>
+
+                    <ImageView
+                            android:id="@+id/photoImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:contentDescription=""
+                            android:padding="2dip"
+                            android:src="@drawable/ppl_head_image"/>
+                </LinearLayout>
+
+                <TableLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                    <TableRow
+                            android:background="@drawable/list_item_center_bg"
+                            android:gravity="center_vertical"
+                            android:id="@+id/birthday_tb">
+
+                        <TextView
+                                style="@style/tableTitleText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:gravity="right|center_vertical"
+                                android:text="@string/id_birthday"/>
+
+                        <TextView
+                                android:id="@+id/text_Birthday"
+                                style="@style/tableContentText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="8dp"
+                                android:layout_span="3"
+                                android:layout_weight="1.0"
+                                android:text=""/>
+                    </TableRow>
+                    <TableRow
+                            android:background="@drawable/list_item_center_bg"
+                            android:gravity="center_vertical"
+                            android:id="@+id/cardName_tb"
+                            android:visibility="gone">
+
+                        <TextView
+                                style="@style/tableTitleText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+
+                                android:gravity="right|center_vertical"
+                                android:text="姓        名:"/>
+
+                        <EditText
+                                style="@style/tableContentText"
+                                android:id="@+id/et_CardName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="8dp"
+                                android:layout_span="3"
+                                android:layout_weight="1.0"
+                                android:background="@null"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:singleLine="true"
+                                />
+                    </TableRow>
+                    <TableRow
+                            android:background="@drawable/list_item_center_bg"
+                            android:gravity="center_vertical">
+
+                        <TextView
+                                style="@style/tableTitleText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:gravity="right|center_vertical"
+                                android:text="@string/id_cardNumber"/>
+
+                        <TextView
+                                android:id="@+id/text_CardNumber"
+                                style="@style/tableContentText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="8dp"
+                                android:layout_span="3"
+
+                                android:layout_weight="1.0"
+                                android:singleLine="true"
+                                />
+                        <EditText
+                                android:visibility="gone"
+                                android:id="@+id/et_CardNumber"
+                                style="@style/tableContentText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="8dp"
+                                android:layout_span="3"
+                                android:layout_weight="1.0"
+                                android:background="@null"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:singleLine="true"
+                                android:text=""/>
+                    </TableRow>
+
+
+                    <TableRow
+                            android:background="@drawable/list_item_bottom_bg"
+                            android:gravity="center_vertical">
+
+                        <TextView
+                                style="@style/tableTitleText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:gravity="right|center_vertical"
+                                android:text="联系电话:"/>
+
+                        <EditText
+                                android:id="@+id/text_PhoneNumber"
+                                style="@style/tableContentText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="8dp"
+                                android:layout_span="3"
+                                android:layout_weight="1.0"
+                                android:background="@null"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:inputType="number"
+                                android:maxLength="11"
+                                android:singleLine="true"
+                                />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <Button
+                    android:id="@+id/btn_idScan"
+                    android:visibility="gone"
+                    style="@style/Button"
+                    android:layout_width="140dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_65px_orange"
+                    android:text="扫描身份证"
+                    android:textColor="@color/white"/>
+
+            <TableLayout
+                    android:id="@+id/scanTable"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp">
+
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/list_item_top_bg"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="监管条码:"
+                            android:textAppearance="@style/tableTitleText"/>
+
+                    <TextView
+                            android:id="@+id/txt_barcode"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/tableContentText"/>
+                </TableRow>
+
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/list_item_center_bg"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="商品名称:"
+                            android:textAppearance="@style/tableTitleText"/>
+
+                    <TextView
+                            android:id="@+id/txt_prodName"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="marquee"
+                            android:textAppearance="@style/tableContentText"/>
+                </TableRow>
+
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/list_item_bottom_bg"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="生产企业:"
+                            android:textAppearance="@style/tableTitleText"/>
+
+                    <TextView
+                            android:id="@+id/txt_producers"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:textAppearance="@style/tableContentText"/>
+                </TableRow>
+            </TableLayout>
+
+            <Button
+                    android:id="@+id/btn_barcodeScan"
+                    style="@style/Button"
+                    android:layout_width="140dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_65px_orange"
+                    android:text="扫描条码"
+                    android:textColor="@color/white"/>
+
+            <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp">
+
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/list_item_top_bg"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="手术医生:"
+                            android:textAppearance="@style/tableTitleText"/>
+
+                    <Spinner
+                            android:id="@+id/sp_operator"
+                            android:layout_width="fill_parent"
+                            android:layout_height="58dp"
+                            android:layout_weight="1.0"
+                            android:background="@null"/>
+
+                    <ImageView
+                            android:contentDescription=""
+                            android:src="@drawable/namecard_clickable"/>
+                </TableRow>
+
+                <TableRow
+                        android:id="@+id/takeTable"
+                        android:background="@drawable/list_item_center_bg"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp">
+
+                    <TextView
+                            style="@style/tableTitleText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:gravity="right|center_vertical"
+                            android:text="取出原因:"/>
+
+                    <Spinner
+                            android:id="@+id/sp_take"
+                            android:layout_width="fill_parent"
+                            android:layout_height="58dp"
+                            android:layout_weight="1.0"
+                            android:background="@null"/>
+
+                    <ImageView
+                            android:contentDescription=""
+                            android:src="@drawable/namecard_clickable"/>
+                </TableRow>
+
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/list_item_bottom_bg"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="手术日期:"
+                            android:textAppearance="@style/tableTitleText"/>
+
+                    <TextView
+                            android:id="@+id/txt_operationDate"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:hint="请选择日期..."
+                            android:paddingLeft="10.0dip"
+                            android:paddingRight="10.0dip"
+                            android:textAppearance="@style/tableContentText"/>
+
+                    <ImageView
+                            android:contentDescription=""
+                            android:src="@drawable/namecard_clickable"/>
+                </TableRow>
+            </TableLayout>
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:gravity="center">
+
+                <Button
+                        android:id="@+id/btn_ok"
+                        style="@style/Button"
+                        android:layout_width="140dip"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_65px_orange"
+                        android:text="提  交"
+                        android:textColor="@color/white"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

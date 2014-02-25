@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/list_item_top_bg" >
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" >
+
+            <TableRow
+                android:background="@drawable/list_item_half_top_bg"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/tableTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/id_name" />
+
+                <TextView
+                    android:id="@+id/text_Name"
+                    style="@style/tableContentText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_span="3"
+                    android:layout_weight="1.0"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/list_item_center_bg"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/tableTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/id_gender" />
+
+                <TextView
+                    android:id="@+id/text_Gender"
+                    style="@style/tableContentText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1.0"
+                    android:text="" />
+
+                <TextView
+                    style="@style/tableTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/id_nation" />
+
+                <TextView
+                    android:id="@+id/text_Nation"
+                    style="@style/tableContentText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1.0"
+                    android:text="" />
+            </TableRow>
+        </TableLayout>
+
+        <ImageView
+            android:id="@+id/photoImage"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:contentDescription=""
+            android:padding="2dip"
+            android:src="@drawable/ppl_head_image" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <TableRow
+            android:background="@drawable/list_item_center_bg"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/tableTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:gravity="right|center_vertical"
+                android:text="@string/id_birthday" />
+
+            <TextView
+                android:id="@+id/text_Birthday"
+                style="@style/tableContentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_span="3"
+                android:layout_weight="1.0"
+                android:text="" />
+        </TableRow>
+
+        <TableRow
+            android:background="@drawable/list_item_center_bg"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/tableTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:gravity="right|center_vertical"
+                android:text="@string/id_cardNumber" />
+
+            <TextView
+                android:id="@+id/text_CardNumber"
+                style="@style/tableContentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_span="3"
+                android:layout_weight="1.0"
+                android:singleLine="true"
+                android:text="" />
+        </TableRow>
+
+        <TableRow
+            android:background="@drawable/list_item_center_bg"
+            android:gravity="center_vertical"
+            android:visibility="gone" >
+
+            <TextView
+                style="@style/tableTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:gravity="right|center_vertical"
+                android:text="@string/id_address" />
+
+            <TextView
+                android:id="@+id/text_Address"
+                style="@style/tableContentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_span="3"
+                android:layout_weight="1.0" />
+        </TableRow>
+
+        <TableRow
+            android:background="@drawable/list_item_center_bg"
+            android:gravity="center_vertical"
+            android:visibility="gone" >
+
+            <TextView
+                style="@style/tableTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:gravity="right|center_vertical"
+                android:text="@string/id_validityDate" />
+
+            <TextView
+                android:id="@+id/text_ValidityDate"
+                style="@style/tableContentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_span="3"
+                android:layout_weight="1.0" />
+        </TableRow>
+
+        <TableRow
+            android:background="@drawable/list_item_bottom_bg"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/tableTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:gravity="right|center_vertical"
+                android:text="@string/id_issuingAuthority" />
+
+            <TextView
+                android:id="@+id/text_IssuingAuthority"
+                style="@style/tableContentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_span="3"
+                android:layout_weight="1.0" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

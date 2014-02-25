@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:layout_height="240px"
+	    android:orientation="horizontal">
+	    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:layout_width="250px"
+		    android:layout_height="240px"
+		    android:orientation="vertical">
+		    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			    android:layout_width="240px"
+			    android:layout_height="50px"
+			    android:orientation="horizontal">
+			    <TextView
+			        android:layout_width="120px"
+			        android:layout_height="50px"
+			        android:textSize="18sp"
+			        android:text="姓名"/>
+			    <TextView
+			        android:layout_width="120px"
+			        android:layout_height="50px"
+			        android:textSize="18sp"
+			        android:id="@+id/xingming"/>
+			</LinearLayout>
+			<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			    android:layout_width="240px"
+			    android:layout_height="50px"
+			    android:orientation="horizontal">
+			    <TextView
+			        android:layout_width="120px"
+			        android:layout_height="50px"
+			        android:textSize="18sp"
+			        android:text="性别"/>
+			    <TextView
+			        android:layout_width="120px"
+			        android:layout_height="50px"
+			        android:textSize="18sp"
+			        android:id="@+id/xingbie"/>
+			</LinearLayout>
+			<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			    android:layout_width="240px"
+			    android:layout_height="50px"
+			    android:orientation="horizontal">
+			    <TextView
+			        android:layout_width="120px"
+			        android:layout_height="50px"
+			        android:textSize="18sp"
+			        android:text="民族"/>
+			    <TextView
+			        android:layout_width="120px"
+			        android:layout_height="50px"
+			        android:textSize="18sp"
+			        android:id="@+id/minzu"/>
+			</LinearLayout>
+			<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			    android:layout_width="250px"
+			    android:layout_height="50px"
+			    android:orientation="horizontal">
+			    <TextView
+			        android:layout_width="120px"
+			        android:layout_height="50px"
+			        android:textSize="18sp"
+			        android:text="出生日期"/>
+			    <TextView
+			        android:layout_width="130px"
+			        android:layout_height="50px"
+			        android:textSize="18sp"
+			        android:id="@+id/csrq"/>
+			</LinearLayout>
+		</LinearLayout>
+		<ImageView
+	        android:id="@+id/zp"
+	        android:layout_width="230px"
+	        android:layout_height="200px"/>
+	</LinearLayout>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:layout_height="50px"
+	    android:orientation="horizontal">
+	    <TextView
+	        android:layout_width="120px"
+	        android:layout_height="50px"
+	        android:textSize="18sp"
+	        android:text="身份证号"/>
+	    <TextView
+	        android:layout_width="360px"
+	        android:layout_height="50px"
+	        android:textSize="18sp"
+	        android:id="@+id/sfzh"/>
+	</LinearLayout>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:layout_height="120px"
+	    android:orientation="horizontal">
+	    <TextView
+	        android:layout_width="120px"
+	        android:layout_height="120px"
+	        android:textSize="18sp"
+	        android:text="住址"/>
+	    <TextView
+	        android:layout_width="360px"
+	        android:layout_height="120px"
+	        android:textSize="18sp"
+	        android:id="@+id/zhuzhi"/>
+	</LinearLayout>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:layout_height="50px"
+	    android:orientation="horizontal">
+	    <TextView
+	        android:layout_width="120px"
+	        android:layout_height="50px"
+	        android:textSize="18sp"
+	        android:text="签发机关"/>
+	    <TextView
+	        android:layout_width="360px"
+	        android:layout_height="50px"
+	        android:textSize="18sp"
+	        android:id="@+id/qfjg"/>
+	</LinearLayout>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:layout_height="50px"
+	    android:orientation="horizontal">
+	    <TextView
+	        android:layout_width="120px"
+	        android:layout_height="50px"
+	        android:textSize="18sp"
+	        android:text="有效期限"/>
+	    <TextView
+	        android:layout_width="360px"
+	        android:layout_height="50px"
+	        android:textSize="18sp"
+	        android:id="@+id/yxqx"/>
+	</LinearLayout>
+	<TextView
+        android:layout_width="fill_parent"
+        android:layout_height="50px"
+        android:textSize="18sp"
+        android:text=""
+        android:textColor="#FF0000"
+        android:id="@+id/tishi"/>
+    <!-- Button
+        android:id="@+id/readCard"
+        android:layout_height="60px" 
+        android:layout_width="100px"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:text="读卡" >
+    </Button-->
+</LinearLayout>

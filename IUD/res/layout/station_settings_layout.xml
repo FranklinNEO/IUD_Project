@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+  <include layout="@layout/action_bar"/>
+
+  <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@drawable/all_bg">
+
+    <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content">
+
+      <TableLayout android:layout_height="wrap_content"
+                   android:layout_width="fill_parent"
+                   android:padding="8dp">
+
+        <TableRow android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center_vertical"
+                  android:paddingLeft="8dp"
+                  android:paddingRight="8dp"
+                  android:background="@drawable/list_item_top_bg">
+
+          <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="right"
+                    android:paddingRight="8dp"
+                    android:text="站点名称:"
+                    android:textAppearance="@style/tableTitleText"/>
+
+          <EditText android:id="@+id/edt_SiteName"
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1.0"
+                    android:textAppearance="@style/tableContentText"
+                    android:background="@null"
+                    android:hint="(必填)"
+                    android:layout_span="2"/>
+
+        </TableRow>
+
+        <TableRow android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center_vertical"
+                  android:paddingLeft="8dp"
+                  android:paddingRight="8dp"
+                  android:background="@drawable/list_item_center_bg">
+          <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="right"
+                    android:paddingRight="8dp"
+                    android:text="负责人:"
+                    android:textAppearance="@style/tableTitleText"/>
+
+          <EditText android:id="@+id/edt_SiteCharge"
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1.0"
+                    android:textAppearance="@style/tableContentText"
+                    android:background="@null"
+                    android:hint="(必填)"
+                    android:layout_span="2"/>
+
+        </TableRow>
+
+        <TableRow android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center_vertical"
+                  android:paddingLeft="8dp"
+                  android:paddingRight="8dp"
+                  android:background="@drawable/list_item_center_bg">
+
+          <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="right"
+                    android:paddingRight="8dp"
+                    android:text="联系电话:"
+                    android:textAppearance="@style/tableTitleText"/>
+
+          <EditText android:id="@+id/edt_SitePhone"
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1.0"
+                    android:textAppearance="@style/tableContentText"
+                    android:background="@null"
+                    android:hint="(必填)"
+                    android:layout_span="2"/>
+
+        </TableRow>
+
+        <TableRow android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center_vertical"
+                  android:paddingLeft="8dp"
+                  android:paddingRight="8dp"
+                  android:background="@drawable/list_item_center_bg">
+          <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="right"
+                    android:paddingRight="8dp"
+                    android:text="省:"
+                    android:textAppearance="@style/tableTitleText"/>
+          <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@null"
+            android:id="@id/province_spinner"
+            android:layout_gravity="center"/>
+
+          <ImageView android:paddingLeft="8dp"
+                     android:src="@drawable/namecard_clickable"/>
+
+        </TableRow>
+
+        <TableRow android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center_vertical"
+                  android:paddingLeft="8dp"
+                  android:paddingRight="8dp"
+                  android:background="@drawable/list_item_center_bg">
+          <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="right"
+                    android:paddingRight="8dp"
+                    android:text="市:"
+                    android:textAppearance="@style/tableTitleText"/>
+          <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@null"
+            android:id="@id/city_spinner"/>
+
+          <ImageView android:paddingLeft="8dp"
+                     android:src="@drawable/namecard_clickable"/>
+
+        </TableRow>
+
+        <TableRow android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center_vertical"
+                  android:paddingLeft="8dp"
+                  android:paddingRight="8dp"
+                  android:background="@drawable/list_item_center_bg">
+          <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="right"
+                    android:paddingRight="8dp"
+                    android:text="区:"
+                    android:textAppearance="@style/tableTitleText"/>
+          <Spinner android:layout_width="fill_parent"
+                   android:layout_height="fill_parent"
+                   android:layout_weight="1.0"
+                   android:background="@null"
+                   android:id="@id/county_spinner"
+                   android:layout_gravity="center"/>
+
+          <ImageView android:paddingLeft="8dp"
+                     android:src="@drawable/namecard_clickable"/>
+
+        </TableRow>
+        <TableRow android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center_vertical"
+                  android:paddingLeft="8dp"
+                  android:paddingRight="8dp"
+                  android:background="@drawable/list_item_bottom_bg">
+
+          <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="right"
+                    android:paddingRight="8dp"
+                    android:text="详细地址:"
+                    android:textAppearance="@style/tableTitleText"/>
+
+          <EditText android:id="@+id/edt_SiteAddress"
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1.0"
+                    android:textAppearance="@style/tableContentText"
+                    android:layout_span="2"
+                    android:background="@null"
+                    android:hint="(必填)"/>
+        </TableRow>
+
+      </TableLayout>
+
+      <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提   交"
+        android:id="@+id/btn_post"
+        style="@style/Button"
+        android:layout_gravity="center"
+        android:singleLine="true"/>
+    </LinearLayout>
+
+  </ScrollView>
+
+</LinearLayout>

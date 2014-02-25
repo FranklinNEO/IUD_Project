@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/all_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/action_bar" />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/list_item_top_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="监管条码:"
+                android:textAppearance="@style/tableTitleText" />
+
+            <TextView
+                android:id="@+id/txt_barcode"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:textAppearance="@style/tableContentText" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/list_item_center_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="生产批号:"
+                android:textAppearance="@style/tableTitleText" />
+
+            <TextView
+                android:id="@+id/txt_batchNumber"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:singleLine="true"
+                android:textAppearance="@style/tableContentText" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/list_item_center_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="品种名称:"
+                android:textAppearance="@style/tableTitleText" />
+
+            <TextView
+                android:id="@+id/txt_varietyName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:singleLine="true"
+                android:textAppearance="@style/tableContentText" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/list_item_center_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="品种编号:"
+                android:textAppearance="@style/tableTitleText" />
+
+            <TextView
+                android:id="@+id/txt_varietyId"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:singleLine="true"
+                android:textAppearance="@style/tableContentText" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/list_item_bkg_bottom"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="生产企业:"
+                android:textAppearance="@style/tableTitleText" />
+
+            <TextView
+                android:id="@+id/txt_enterpriseName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:singleLine="true"
+                android:textAppearance="@style/tableContentText" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/list_item_bottom_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="企业编号:"
+                android:textAppearance="@style/tableTitleText" />
+
+            <TextView
+                android:id="@+id/txt_enterpriseId"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:singleLine="true"
+                android:textAppearance="@style/tableContentText" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btn_ok"
+            style="@style/Button"
+            android:background="@drawable/button_65px_orange"
+            android:text="确  定"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="28dp"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/Button"
+            android:background="@drawable/button_65px_orange"
+            android:text="取  消"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="28dp"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/btn_scan"
+            style="@style/Button"
+            android:background="@drawable/button_65px_orange"
+            android:text="扫  描"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

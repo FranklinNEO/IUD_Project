@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/all_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/action_bar" />
+
+    <ListView
+        android:id="@+id/doctor_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/mm_listitem_normal"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@drawable/reader_item_divider"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="true"
+        android:listSelector="@drawable/mm_listitem_normal"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="none" />
+
+    <TextView
+        android:id="@id/android:empty"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dip"
+        android:gravity="center"
+        android:text="没有查询到相关数据"
+        android:textColor="#ff29549f"
+        android:textSize="26dip"
+        android:visibility="gone" />
+
+</LinearLayout>

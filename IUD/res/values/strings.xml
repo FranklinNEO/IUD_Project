@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">宫内节育器(IUD)放置登记系统</string>
+  <string name="id_name">姓名:</string>
+  <string name="id_birthday">出生日期:</string>
+  <string name="id_validityDate">有效期:</string>
+  <string name="id_gender">性别:</string>
+  <string name="id_nation">民族:</string>
+  <string name="id_address">住址:</string>
+  <string name="id_issuingAuthority">发证机关:</string>
+  <string name="id_cardNumber">身份证号:</string>
+  <string name="id_dsh_btn_events">放置信息查询</string>
+  <string name="id_dsh_btn_friend">站点人员管理</string>
+  <string name="id_dsh_btn_message">放置信息登记</string>
+  <string name="id_dsh_btn_news_feed">站点信息设置</string>
+  <string name="copyright">江苏瑞德信息产业有限公司</string>
+</resources>
